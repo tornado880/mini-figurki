@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.o_btn_nav {
+    margin: 0;
+    padding: 4px;
+
+    cursor: pointer;
+    color: white;
+    z-index: 999;
+    font-size: 24px;
+
+    min-width: 45px;
+    min-height: 45px;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    background-color: var(--bs-primary);
+    border: 2px solid var(--bs-primary);
+    /* box-shadow: 1px 1px 30px black; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.o_btn_nav:hover {
+    border: 2px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.o_btn_nav:active {
+    /* padding: 6px; */
+    /* border: 2px solid var(--bs-primary); */
+    /* font-size: 25px; */
+
+    border: 2px solid var(--bs-primary);
+
 }
 
-.App-link {
-  color: #61dafb;
+.o_towar {
+    border: 2px solid var(--bs-primary);
+    cursor: pointer;
+}
+.o_towar:hover {
+    border: 2px solid var(--bs-white);
+}
+.o_towar:active {
+    border: 2px solid var(--bs-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.o_text {
+    margin: 0;
+    padding: 8px 16px;
+
+    cursor: default;
+
+    text-decoration: none;
+    height: 60px;
+    color: white;
+
+    /* border: 1px solid white; */
+
+    /* box-shadow: 1px 1px 30px black; */
+
+    /* backdrop-filter: blur(5px); */
+
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items along the main axis */
+    text-align: center; /* Centers text inside the container */
+}
+
+.o_btn {
+    margin: 0;
+    padding: 8px 16px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    /* border: 1px solid white; */
+
+    /* box-shadow: 1px 1px 30px black; */
+
+    backdrop-filter: blur(5px);
+
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items along the main axis */
+    text-align: center; /* Centers text inside the container */
+}
+
+.o_btn:hover {
+    background-color: var(--bs-primary) !important;
+    border: 1px solid var(--bs-primary) !important;
+}
+
+.o_btn:active {
+    border: 1px solid var(--bs-white) !important;
+}
+
+input {
+    border: 2px solid var(--bs-primary);
+}
+
+input:focus {
+    border: 2px solid var(--bs-white);
 }
